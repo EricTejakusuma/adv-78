@@ -1,31 +1,41 @@
 <html>
     <head>
-        <title>Project77</title>
-        <body>
-            <h1>Project77</h1>
-            <script>
-                console.log("My first console project");
-                var firstname="Ranbir";
-                var lastname="Kapoor";
-                var fullname=firstname.concat(lastname);
-                console.log(fullname);
-                var a1=(10);
-                var b1=(10);
-                var add=a1 + a1 ;
-                console.log(add);
-                var a2=(10);
-                var b2=(10);
-                var subtract=a1 - a2 ;
-                console.log(subtract);
-                var a3=(10);
-                var a3=(10);
-                var multiply=a3 * a3 ;
-                console.log(multiply);
-                var a4=(10);
-                var a4=(10);
-                var divide=a4 / a4 ;
-                console.log(divide);
-            </script>
-        </body>
+        <title>
+            Project C78
+        </title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="javascript" href="main.js">
+
     </head>
+    <body>
+        <center>
+            <h1>
+                My Family Book
+            </h1>
+            
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px" />
+            <h4 id="family_member_name">CooL! YoU foUND thIS eASteR EgG</h4> 
+            <input type="button" onclick="update()" value="Next Image" />
+            
+            <script href="main.js">
+            var images = ["https://i.postimg.cc/MGn9GJXw/family.jpg","https://i.postimg.cc/qqyYvVbq/grandpa.jpg","https://i.postimg.cc/wjMnFtMX/father.jpg","https://i.postimg.cc/5ymDKL83/bro.jpg","https://i.postimg.cc/JnL6wtrd/sister.jpg","https://i.postimg.cc/bw5W5zSK/mother.jpg"];
+            var names = ["Family Book","Ranbir Singh","Diljeet Singh","Rocky Singh","Alia Singh","Soni Singh"];
+            var updatedImage = document.getElementById('family_member_image');
+            var updatedName = document.getElementById('family_member_name');
+            var i = 0;
+                    function update() {
+
+                    i += 1;
+                    if (i > images.length -1 ){
+                        i = 0;
+                    }
+                    updatedImage.src = images[i];
+                    updatedName.innerHTML = names[i];
+               }
+               </script>
+            </center>
+              
+    </body>
 </html>
+
